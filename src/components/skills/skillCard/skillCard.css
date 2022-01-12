@@ -1,0 +1,194 @@
+.javascript {
+    --bg-color: #FDD601;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(253, 214, 0.48);
+}
+.typescript {
+    --bg-color: #1976D2;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(25, 118, 210, 0.48);
+}
+.html {
+    --bg-color: #E65100;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(230, 81, 0, 0.48);
+}
+.css {
+    --bg-color: #0077BD;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(0, 119, 189, 0.48);
+}
+.react {
+    --bg-color: #5ED3F3;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(94, 211, 243, 0.48);
+}
+.redux {
+    --bg-color: #BCAADF;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(188, 170, 223, 0.48);
+}
+.node {
+    --bg-color: #84CD29;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(132, 205, 41, 0.48);
+}
+.sql {
+    --bg-color: #336790;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(51, 103, 144, 0.48);
+}
+.git {
+    --bg-color: #F05133;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(240, 81, 51, 0.48);
+}
+.github {
+    --bg-color: #2280F2;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(34, 128, 242, 0.48);
+}
+.figma {
+    --bg-color: #EB4B1D;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(235, 75, 29, 0.48);
+}
+.adobe {
+    --bg-color: #020F15;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(2, 15, 21, 0.48);
+}
+
+.skill-card {
+    padding: 2px;
+    border-radius: 0.5rem;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    background-color: rgba(200, 116, 178, 1);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.11),
+    0 0.25rem 1rem var(--box-shadow-color);
+}
+
+.skill-card:hover .overlay {
+    background: var(--bg-color);
+    transform: scale(5) translateZ(0);
+}
+
+.skill-card:hover .circle {
+    border-color: var(--bg-color-light);
+    background: var(--bg-color);
+    filter: none;
+
+}
+
+.skill-card:hover .circle:after {
+    background: var(--bg-color-light);
+}
+
+.skill-card:hover p {
+    color: var(--text-color-hover);
+}
+
+.skill-card:active {
+    transform: scale(1) translateZ(0);
+    box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.skill-card p {
+    color: black;
+    margin-top: 5px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    z-index: 0;
+    transition: color 0.3s ease-out;
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transition: all 0.3s ease-out;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.circle-greyscale {
+    filter: grayscale();
+}
+
+.circle:after {
+    content: "";
+    display: block;
+    background: var(--bg-color);
+    border-radius: 50%;
+    transition: opacity 0.3s ease-out;
+}  
+
+.circle img {
+    z-index: 2;
+    padding: 12%;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .6);
+    z-index: 0;
+    transition: transform 0.5s ease-out;
+}
+
+.white-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background: var(--bg-color-light);
+    z-index: 1;
+    transition: transform 0.5s ease-out;
+}
+
+@media (min-width: 576px) {
+    .skill-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .skill-card p {
+        font-size: 1rem;
+    }
+}

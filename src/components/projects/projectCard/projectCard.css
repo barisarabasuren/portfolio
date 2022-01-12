@@ -1,0 +1,224 @@
+.portfolio {
+    --bg-color: #8860D0;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(136, 96, 208, 0.48);
+}
+.fairvote {
+    --bg-color: #4675F1;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(70, 117, 241, 0.48);
+}
+.faceDetaction {
+    --bg-color: #F66383;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(246, 99, 131, 0.48);
+}
+
+.project-card {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    background-color: rgba(245, 212, 224, 1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.11),
+    0 0.25rem 1rem var(--box-shadow-color);
+}
+
+.project-card:hover .project-overlay {
+    background: var(--bg-color);
+    transform: scale(10) translateZ(0);
+}
+
+.project-card:hover .project-circle {
+    border-color: var(--bg-color-light);
+    background: var(--bg-color);
+    filter: none;
+}
+
+.project-card:hover .project-circle:after {
+    background: var(--bg-color-light);
+}
+
+.project-card:hover p {
+    color: var(--text-color-hover);
+}
+
+.project-card:hover .project-links a{
+    background-color: white;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 7px 29px 0px;
+}
+
+.project-link{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.project-link img{
+    height: 35px;
+    width: 35px;
+}
+
+.project-card:active {
+    transform: scale(1) translateZ(0);
+    box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.project-circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transition: all 0.3s ease-out;
+    filter: grayscale();
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.project-circle:after {
+    content: "";
+    display: block;
+    background: var(--bg-color);
+    border-radius: 50%;
+    transition: opacity 0.3s ease-out;
+}  
+
+.project-circle img {
+    z-index: 2;
+    padding: 12%;
+    width: 100%;
+    height: 100%;
+}
+
+.project-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .6);
+    z-index: 0;
+}
+
+.project-white-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background: var(--bg-color-light);
+    z-index: 1;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex-grow: 1;
+}
+
+.project-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.separator {
+    margin-top: 20px;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: black;
+    align-self: center;
+    z-index: 0;
+}
+
+.project-card:hover .separator {
+    background: white;
+}
+
+.project-text{
+    color: black;
+    margin-bottom: 0;
+    z-index: 0;
+    transition: color 0.3s ease-out;
+    text-align: center;
+}
+
+.project-title {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-content {
+    margin-top: 1rem;
+    flex-grow: 1;
+    font-size: 0.7rem;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.4rem;
+}
+
+.technologies-text {
+    padding: 2px 5px;
+    margin: 0 5px 5px 0; 
+    color: grey;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.4rem;
+}
+
+.project-links a {
+    margin: 10px 10px ; 
+    z-index: 0;
+}
+
+/* .project-card:hover .project-links a {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+} */
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    .project-content {
+        font-size: 1rem;
+    }
+}
