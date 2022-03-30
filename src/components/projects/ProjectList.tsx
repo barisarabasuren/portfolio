@@ -1,9 +1,9 @@
-import portfolio from './../../images/logo_black.png'
+import portfolio from './../../images/uba.png'
 import fairvote from './projectImg/fairvote.png'
 
 export const projects = [
     {
-      id: 2,
+      id: 1,
       projectName: "FairVote",
       projectImg: fairvote,
       color: "fairvote",
@@ -13,7 +13,7 @@ export const projects = [
       deployLink: "https://fairvote.netlify.app/"
     },
     {
-      id: 3,
+      id: 2,
       projectName: "Face Recognition App",
       projectImg: "https://img.icons8.com/fluency/500/000000/brain.png",
       color: "faceDetaction",
@@ -23,13 +23,33 @@ export const projects = [
       deployLink: "https://uba-face-recognition.herokuapp.com/"
     },
     {
-      id: 1,
+      id: 3,
+      projectName: "Car Listing App",
+      projectImg: "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/500/000000/external-car-camping-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png",
+      color: "car",
+      projectContent:"A full stack solo project that users can list, view and overview cars.",
+      technologies: ['JavaScript', 'React', 'Node.js', 'express.js', 'MongoDb', 'AntDesign'],
+      githubLink: "https://github.com/barisarabasuren/car_listing_server",
+      deployLink: "https://car-listing-umut.netlify.app/"
+    },
+    {
+      id: 4,
+      projectName: "Url Shortener App",
+      projectImg: "https://img.icons8.com/color/100/000000/scissors.png",
+      color: "url",
+      projectContent:"A full stack solo project that users can shorten urls, view previous urls and their stats.",
+      technologies: ['TypeScript', 'React', 'Node.js', 'express.js', 'MongoDb', 'AntDesign'],
+      githubLink: "https://github.com/barisarabasuren/url_shortener",
+      deployLink: "https://whispering-mesa-59217.herokuapp.com/"
+    },
+    {
+      id: 5,
       projectName: "My Portfolio Website",
       projectImg: portfolio,
       color: "portfolio",
       projectContent:"A high performance responsive website that is animated with scroll and hover for enriching user experience.",
       technologies: ['TypeScript', 'React', 'Bootstrap', 'EmailJS'],
-      githubLink: "",
+      githubLink: "https://github.com/barisarabasuren/portfolio",
       deployLink: "https://umutarabasuren.netlify.app/"
     }
 ]

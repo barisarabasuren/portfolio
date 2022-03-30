@@ -17,6 +17,20 @@
     --box-shadow-color: rgba(246, 99, 131, 0.48);
 }
 
+.car {
+    --bg-color: #a8e07d;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(190, 250, 145, 0.48);
+}
+
+.url {
+    --bg-color: #30BCD4;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(48, 188, 212, 0.48);
+}
+
 .project-card {
     overflow: hidden;
     border-radius: 0.5rem;
@@ -41,7 +55,7 @@
 
 .project-card:hover .project-overlay {
     background: var(--bg-color);
-    transform: scale(10) translateZ(0);
+    transform: scale(12) translateZ(0);
 }
 
 .project-card:hover .project-circle {
