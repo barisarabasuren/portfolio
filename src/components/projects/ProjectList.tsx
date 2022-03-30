@@ -28,7 +28,7 @@ export const projects = [
       projectImg: "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/500/000000/external-car-camping-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png",
       color: "car",
       projectContent:"A full stack solo project that users can list, view and overview cars.",
-      technologies: ['JavaScript', 'React', 'Node.js', 'express.js', 'MongoDb', 'AntDesign'],
+      technologies: ['JavaScript', 'React', 'Node.js', 'express.js', 'MongoDB', 'AntDesign'],
       githubLink: "https://github.com/barisarabasuren/car_listing_server",
       deployLink: "https://car-listing-umut.netlify.app/"
     },
@@ -38,7 +38,7 @@ export const projects = [
       projectImg: "https://img.icons8.com/color/100/000000/scissors.png",
       color: "url",
       projectContent:"A full stack solo project that users can shorten urls, view previous urls and their stats.",
-      technologies: ['TypeScript', 'React', 'Node.js', 'express.js', 'MongoDb', 'AntDesign'],
+      technologies: ['TypeScript', 'React', 'Node.js', 'express.js', 'MongoDB', 'AntDesign'],
       githubLink: "https://github.com/barisarabasuren/url_shortener",
       deployLink: "https://whispering-mesa-59217.herokuapp.com/"
     },

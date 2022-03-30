@@ -64,11 +64,11 @@
     --text-color-hover: #ffffff;
     --box-shadow-color: rgba(235, 75, 29, 0.48);
 }
-.adobe {
-    --bg-color: #020F15;
+.mongo {
+    --bg-color: #499D4A;
     --bg-color-light: #ffffff;
     --text-color-hover: #ffffff;
-    --box-shadow-color: rgba(2, 15, 21, 0.48);
+    --box-shadow-color: rgba(73, 157, 74, 0.48);
 }
 
 .skill-card {

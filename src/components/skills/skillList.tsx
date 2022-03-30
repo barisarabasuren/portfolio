@@ -49,26 +49,26 @@ export const skills = [
     },
     {
       id: 9,
+      skillName: "MongoDB",
+      skillImg: "https://img.icons8.com/external-tal-revivo-light-tal-revivo/96/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-light-tal-revivo.png",
+      color: "mongo"
+    },
+    {
+      id: 10,
       skillName: "Git",
       skillImg: "https://img.icons8.com/windows/96/000000/git.png",
       color: "git"
     },
     {
-      id: 10,
+      id: 11,
       skillName: "GitHub",
       skillImg: "https://img.icons8.com/ios-glyphs/96/000000/github.png",
       color: "github"
     },
     {
-      id: 11,
+      id: 12,
       skillName: "Figma",
       skillImg: "https://img.icons8.com/ios/96/000000/figma--v1.png",
       color: "figma"
-    },
-    {
-      id: 12,
-      skillName: "Photoshop",
-      skillImg: "https://img.icons8.com/color/96/000000/adobe-photoshop--v1.png",
-      color: "adobe"
-    },
+    }
 ]
